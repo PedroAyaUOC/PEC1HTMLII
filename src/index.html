@@ -15,25 +15,25 @@
         
         <div class="container">
 
-            <div class="flex-row-container-3">
+            <div class="flex-row-container">
 
-                <div class="flex-row-item-3">
+                <div class="flex-row-item">
                     <picture>
                         <source srcset="./assets/images/foto.jpg?as=webp&width=200" type="image/webp" />
                         <img src="./assets/images/foto.jpg?width=200" alt="Foto CV" class="cv-logo" />
                     </picture>
                 </div>  <!-- ./flex-row-item -->
 
-                <div class="flex-row-item-3">
-                    <h2><i class="fa-solid fa-id-card"></i> Datos Personales</h2>
+                <div class="flex-row-item">
+                    <h1>Pedro Antonio Ayala López</h1>
+                    <p class="ph1">Desarrollador Web</p>
                     <ul>
-                        <li><strong>Nombre:</strong> Pedro Antonio Ayala López</li>
-                        <li><strong>Email: </strong> payalalo@uoc.edu</li>
-                        <li><strong>Dirección:</strong> Calle Albacete Nº 13</li>
-                        <li><strong>Web:</strong> https://objective-northcutt-89e5b9.netlify.app/</li>
+                        <li><i class="fa-solid fa-envelope"></i> payalalo@uoc.edu</li>
+                        <li><i class="fa-solid fa-map-location-dot"></i> Calle Albacete Nº 13</li>
+                        <li><i class="fa-solid fa-globe"></i> <a href="https://objective-northcutt-89e5b9.netlify.app/">https://objective-northcutt-89e5b9.netlify.app</a></li>
                     </ul>
 
-                    <p>Conocido por el nombre artístico de Chiquito de la Calzada, fue un humorista, cantaor de flamenco.</p>
+                    <p>Interesado en el mundo de la informática y el desarrollo web, además de los trabajos de construcción y reforma de viviendas.</p>
         
                 </div>  <!-- ./flex-row-item -->
  
@@ -47,27 +47,42 @@
                         <h2><i class="fa-solid fa-graduation-cap"></i> Formación Académica</h2>
                         <ul>
                             <li>Ingeniero en Informática</li>
-                            <li>Curso experto en ciberseguridad</li>
+                            <li>Curso avanzado en ciberseguridad</li>
                             <li>Curso experto en E-Commerce</li>
                             <li>Curso avanzado en SEO</li>
+                            <li>Curso experto en SketchUp</li>
                         </ul>
                 </div>  <!-- ./flex-row-item -->
 
                 <!-- Habilidades -->
                 <div class="flex-row-item-2">
                     <article class="card" >
-                        <h2><i class="fa-solid fa-trophy-star"></i> Habilidades</h2>
+                        <h2><i class="fa-solid fa-award"></i> Habilidades</h2>
 
-                        <i class="fa-brands fa-html5"></i> HTML5
-                        <i class="fa-brands fa-css3-alt"></i> CSS3
-                        <i class="fa-brands fa-js"></i> JavaScript
-                        <i class="fa-brands fa-sass"></i> Sass
-                        <i class="fa-brands fa-php"></i> PHP
-                        <i class="fa-angular fa-brands"></i> Angular
-                        <i class="fa-database fa-solid"></i> MySQL
-                        <i class="fa-brands fa-github"></i> Github
-                        <i class="fa-brands fa-wordpress"></i> Wordpress
-                        <i class="fa-solid fa-shop"></i> Prestashop
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><i class="fa-brands fa-html5"></i> HTML5</td>
+                                    <td><i class="fa-brands fa-css3-alt"></i> CSS3</td>
+                                    <td><i class="fa-brands fa-js"></i> JavaScript</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa-brands fa-php"></i> PHP</td>
+                                    <td><i class="fa-angular fa-brands"></i> Angular</td>
+                                    <td><i class="fa-brands fa-node"></i> NodeJS</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa-brands fa-angular"></i> Angular</td>
+                                    <td><i class="fa-brands fa-laravel"></i> Laravel</td>
+                                    <td><i class="fa-brands fa-symfony"></i> Symfony</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa-solid fa-database"></i> MySQL</td>
+                                    <td><i class="fa-brands fa-wordpress"></i> Wordpress</td>
+                                    <td><i class="fa-solid fa-shop"></i> Prestashop</td>
+                                </tr>
+                            </tbody>
+                          </table>
 
                     </article>
                 </div>  <!-- ./flex-row-item -->
@@ -88,7 +103,7 @@
                 <!-- Proyectos -->
                 <div class="flex-row-item-2">
                    
-                    <h2><i class="fa-solid fa-rectangle-history-circle-user"></i> Proyectos</h2>
+                    <h2><i class="fa-solid fa-desktop"></i> Proyectos</h2>
                     <ul>
                         <li><a href="#">Almanzora Market</a></li>
                         <li><a href="#">CGM Consulting</a></li>
@@ -101,10 +116,8 @@
             </div>  <!-- ./flex-row-container -->
 
         </div>  <!-- ./container -->
-
-    
+ 
     </main>
-    <br>
 
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->

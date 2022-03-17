@@ -1,6 +1,6 @@
 {
-  "name": "uoc-boilerplate",
-  "version": "3.4.0",
+  "name": "",
+  "version": "1.0.0",
   "private": true,
   "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
   "scripts": {
@@ -9,6 +9,7 @@
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
     "build": "npm-run-all clean parcel:build",
+    "stylelint": "stylelint src/**/*.scss",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },
   "web": "dist/index.html",
