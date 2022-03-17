@@ -11,6 +11,6 @@
  */
 
 +( function() {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
+  const cv = "Pedro A. Ayala López";
+  console.log(`Hola, ${cv}!`);
 } )();

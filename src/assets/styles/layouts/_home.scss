@@ -1,57 +1,125 @@
-* {
-  box-sizing: border-box;
-}
+/* 29abe2 a - 669900 v*/
 
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  padding: 2rem;
-  font-family: $font-family-sans-serif;
+/**** GLOBAL ****/
+
+body{
+	font-family: $font-family-sans-serif;
+	font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  height: 100vh; 
+	margin: 0;
+  color: $cv-corporate;
+	background-color: $cv-bg;
 }
 
-.uoc-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
+.container{
+	width: 100%;
+	margin: auto;
+}
+
+@media screen and (max-width: 600px), screen and (orientation: portrait) {
+	.container{width: 95% !important;}
+  main{width: 95%;}
+}
+
+a{
+  text-decoration: none;
+  color: #669900;
+}
+
+h1{
   text-align: center;
+  font-size: 1.8em;
+  margin: 50px 0 20px 0;
+}
+
+h2{
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0px 0 25px 0 !important;
+}
+
+p{
+    margin: 25px 0 25px 0;
+    line-height: 160%;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+
+/************************* MAIN *************************/
+main{
+	padding:0;
+    width: 70%;
+    margin: auto;
+}
+
+.flex-row-container {
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-top:15px;
+  margin-bottom: 40px;
+  padding: 10px 15px;
   background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-.uoc-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  max-width: 200px;
-  height: auto;
+.flex-row-container > .flex-row-item {
+  flex: auto;      /*grow | shrink | basis */
+  /*min-height:295px;*/
+}
 
-  @media (min-width: $mqMinWidth) {
-    max-width: none;
+.flex-row-item {
+  background-color: #fff;
+  padding:10px;
+}
+
+.flex-row-item ul{padding-inline-start: 20px !important;}
+.flex-row-item li{margin-bottom:20px;}
+
+@media screen and (max-width: 600px), screen and (orientation: portrait){
+
+  .flex-row-container > .flex-row-item {
+      flex: 1 1 100%;      
   }
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
+.flex-row-container img{border-radius: 5px; border: 1px solid rgb(245, 245, 245);}
 
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
-  }
+.flex-row-container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: center;
+    gap: 40px;
+    margin-top:15px;
+    margin-bottom: 40px;
 }
 
-.uoc-footer {
-  margin-top: 1.5rem;
-  font-size: 0.75rem;
-  text-align: center;
+.flex-row-container-2 > .flex-row-item-2 {
+    flex: 1 1 25%;      /*grow | shrink | basis */
+}
+
+.flex-row-item-2 {
+    background-color: #fff;
+    padding:25px;
+    border-radius: 5px;
+}
+
+.flex-row-item-2 ul{padding-inline-start: 20px !important;}
+.flex-row-item-2 li{margin-bottom:20px;}
+
+@media screen and (max-width: 600px), screen and (orientation: portrait){
+
+    .flex-row-container-2 > .flex-row-item-2 {
+        flex: 1 1 100%;      
+    }
+
+    .flex-row-container-2 {
+        gap: 40px;
+        margin-top:15px;
+        margin-bottom: 40px;
+    }
 }
