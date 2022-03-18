@@ -1,14 +1,14 @@
 {
-  "name": "",
+  "name": "pec1htlm2",
   "version": "1.0.0",
   "private": true,
-  "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
+  "description": "PEC1 Herramientas HTML y CSS II",
   "scripts": {
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
-    "build": "npm-run-all clean parcel:build",
+    "build": "npm-run-all clean stylelint parcel:build",
     "stylelint": "stylelint src/**/*.scss",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },
@@ -24,17 +24,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
+    "url": "git+https://github.com/PedroAyaUOC/PEC1HTMLII.git"
   },
   "author": {
-    "name": "Jordi Tarrida",
-    "email": "jorditarrida@uoc.edu"
+    "name": "Pedro A. Ayala",
+    "email": "payalalo@uoc.edu"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues"
+    "url": "https://github.com/PedroAyaUOC/PEC1HTMLII/issues"
   },
-  "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
+  "homepage": "https://github.com/PedroAyaUOC/PEC1HTMLII#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.2.0",
     "autoprefixer": "^10.4.2",

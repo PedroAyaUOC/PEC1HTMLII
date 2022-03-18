@@ -77,14 +77,14 @@ main{
   background-color: #fff;
 }
 
-.flex-row-container > .flex-row-item {
-  flex: auto;      /*grow | shrink | basis */
-  /*min-height:295px;*/
-}
-
 .flex-row-item {
   background-color: #fff;
   padding:10px;
+}
+
+.flex-row-container > .flex-row-item {
+  flex: auto;      /*grow | shrink | basis */
+  /*min-height:295px;*/
 }
 
 .flex-row-item ul{padding-left: 0px;}
@@ -110,15 +110,16 @@ main{
     margin-bottom: 40px;
 }
 
+.flex-row-item-2 {
+  background-color: #fff;
+  padding:25px;
+  border-radius: 5px;
+}
+
 .flex-row-container-2 > .flex-row-item-2 {
     flex: 1 1 25%;      /*grow | shrink | basis */
 }
 
-.flex-row-item-2 {
-    background-color: #fff;
-    padding:25px;
-    border-radius: 5px;
-}
 
 .flex-row-item-2 ul{padding-inline-start: 20px !important;}
 .flex-row-item-2 li{margin-bottom:20px;}
